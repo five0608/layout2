@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+html,body{
+    background-color: white;
+    color: #333333;
+    font-family: "맑은고딕";
+    font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #666666;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+img{
+    vertical-align: middle;
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    align-items: center;
+    display: flex;
+    background-color: blanchedalmond;
+    position: relative;
+}
+
+footer{
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+h1{
+    width: 17%;
+    max-width: 200px;
+    /* border: 1px solid black; */
+}
+
+.nav-box{
+    width: 83%;
+    max-width: 1000px;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+nav{
+    width: 60%;
+    max-width: 60%;
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.main-nav{
+    width: 25%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.main-nav>a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.main-nav:hover>a{
+    background-color: beige;
+    color: white;
+}
+
+.drop{
+    position: absolute;
+    width: 100%;
+    background-color: burlywood;
+    margin-top: 1px;
+    height: 160px;
+    /* height: 0;
+    overflow: hidden;
+    transition: 0.5s; */
+    display: none;
+    z-index: 99;
+    display: none;
+}
+
+.drop a{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.drop a:hover{
+    background-color: darkcyan;
+    color: white;
+}
+
+.drop-back{
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: pink;
+    left: 0;
+    top: 100px;
+    display: none;
+}
+
+/* .main-nav:hover .drop{
+    height: 160px;
+} */
+
+H2{
+    display: none;
+}
+
+.slider-g{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.slider-g img{
+    width: 100%;
+}
+
+.n-g-s{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notic,
+.gallery,
+.shortcut{
+    width: 33.3%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.gallery a,
+.shortcut a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery img,
+.shortcut img{
+    width: 100%;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery a{
+    display: block;
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.notic h3{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    margin-left: 5px;
+    position: relative;
+    z-index: 9;
+    border-bottom: 1px solid white;
+}
+
+.notic-content{
+    width: 100%;
+    border: 1px solid black;
+    height: 80%;
+    margin-top: -1px;
+}
+
+.notic-content ul{
+    list-style-type: none;    
+}
+
+.notic-content ul li{
+    width: 100%;
+    padding: 6px 0;
+}
+
+.notic-content ul li:nth-child(even){
+    background-color: #ddd;
+}
+
+.notic-content ul li a{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.copy{
+    width: 83%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns-f{
+    width: 17%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.sns,
+.f{
+    width: 100%;
+    height: 50px;
+}
+
+.sns{
+    border-bottom: 1px dashed #666666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sns a{
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+}
+
+.sns img{
+    width: 100%;
+}
+
+.f select{
+    width: 100%;
+    height: 100%;
+}
